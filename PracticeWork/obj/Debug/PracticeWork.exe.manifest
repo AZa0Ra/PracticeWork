@@ -122,7 +122,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zZ4uPglH3BtwaBa99dpJ1EHm0KeCmQq78UgI/mPjWOc=</dsig:DigestValue>
+        <dsig:DigestValue>1+plTHo9CHEuodRQIN3pTqFK8G86dE3eBk6XcyUOibI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -180,7 +180,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>DuwChh/ykWt/i50q/j2Ez6v07c5OJSz3tlukqpuXLdY=</dsig:DigestValue>
+      <dsig:DigestValue>/eROC70mNr20JvTw9BJQ2qOPD7FxcQxddW9rw0yUIVk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DB_log.ldf" size="8388608" writeableType="applicationData">
@@ -189,7 +189,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>xL5QDhQIzTMJ8Nd1mE91PlxBCUe0FDdFEM9AMPYULBM=</dsig:DigestValue>
+      <dsig:DigestValue>EzHt8B7KkuMSJByggSf4ZG84c9WocptWsFiZ/OAISio=</dsig:DigestValue>
     </hash>
   </file>
   <file name="pngwing.ico" size="6976">

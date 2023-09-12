@@ -24,11 +24,6 @@ namespace PracticeWork
         private int _country = 0, _region = 0, _area = 0, _village = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-/*          string folder = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
-            string myAppFolder = Path.Combine(folder, "MyReservedAppDataFolder");
-            Directory.CreateDirectory(myAppFolder);
-            AppDomain.CurrentDomain.SetData(@"C:\ProgramData\MyReservedAppDataFolder\DB.mdf", myAppFolder);*/
 
             CenterToScreen();
             // TODO: This line of code loads data into the 'dBDataSetCountry.located_countrys' table. You can move, or remove it, as needed.
@@ -115,12 +110,6 @@ namespace PracticeWork
         }
         private void dataGridView2_SelectionChanged(object sender, EventArgs e)
         {
-            /*            if (dataGridView2.CurrentRow.Index % 2 == 0)
-                        {
-                            dataGridViewTextBoxColumn7.DefaultCellStyle.BackColor = Color.Gainsboro;  
-                        }
-                        else dataGridViewTextBoxColumn7.DefaultCellStyle.BackColor = Color.White;*/
-            //  int rowindex = dataGridView2.CurrentCell.RowIndex;
 
             _region = checkMaxRows(_region, dataGridViewArea);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter($"SELECT * FROM located_area WHERE country = {_country} AND region = {_region}", conn);
@@ -128,18 +117,6 @@ namespace PracticeWork
             sqlDataAdapter.Fill(areaDataSet);
             dataGridViewRegion.DataSource = areaDataSet.Tables[0];
             paintRows(dataGridViewRegion);
-
-/*            sqlDataAdapter = new SqlDataAdapter("SELECT region FROM located_region", conn);
-            DataSet regionDataSet = new DataSet();*/
-            //textBoxSearchArea.Text = dataGridViewArea.CurrentRow.Cells[2].Value.ToString();
-
-            //textBoxTest2.Text = dataGridViewArea.RowCount.ToString(); // Показує кількість рядків
-
-            //if ((int)dataGridViewArea.CurrentRow.Cells[0].Value != dataGridViewArea.RowCount)
-            //{
-            //    int id2 = (int)dataGridViewArea.CurrentRow.Cells[0].Value;
-            //    textBoxTest2.Text = id2.ToString();
-            //}
             try
             {
                 textBoxSearchArea.Text = dataGridViewArea.CurrentRow.Cells[2].Value.ToString().Trim();
